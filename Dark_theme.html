@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Amazon Webpage</title>
+  <style>
+    :root {
+        --bg-color: white;
+        --text-color: black;
+        --card-bg: #f9f9f9;
+        --card-border: #c49e9e;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        background-color: var(--bg-color);
+        color: var(--text-color);
+    }
+
+    header {
+        background-color: var(--text-color);
+        color: var(--bg-color);
+        padding: 2rem;
+        text-align: center;
+    }
+
+    .gallery {
+        margin: 5px;
+        border: 1px solid var(--card-border);
+        background-color: var(--card-bg);
+        float: left;
+        width: 180px;
+        color: var(--text-color);
+    }
+
+    .desc {
+        padding: 5px;
+    }
+
+    .green-text {
+        color: var(--text-color);
+    }
+
+    .theme-toggle {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        padding: 10px;
+        border: none;
+        background-color: var(--text-color);
+        color: var(--bg-color);
+        cursor: pointer;
+        font-size: 14px;
+        border-radius: 5px;
+    }
+</style>
+</head>
+<body>
+  <button class="theme-toggle" onclick="toggleTheme()">🌙 Dark Mode</button>
+
+  <header>
+    <h1>AMAZON.COM</h1>
+  </header>
+
+  <!-- Example Product Card -->
+  <div class="gallery">
+    <a href="https://amzn.in/d/hJhJG4Z" target="_blank">
+      <img src="https://m.media-amazon.com/images/I/61VuVU94RnL._SX679_.jpg" alt="Iphone" width="160" height="160">
+    </a>
+    <div class="desc"><p class="green-text">iPhone 14 (512 GB)<br>RS 64,900</p>
+    </div>
+  </div>
+   <div class="gallery">
+                    <a href="https://amzn.in/d/i9yErEq" target="_blank">
+                        <img src="https://m.media-amazon.com/images/I/711JcqhqOaL._SX679_.jpg" alt="airbuds" width="160" height="160"/>
+                    </a>
+                    <div class="desc"><p class="green-text"> BY NOTHING Buds 2a&nbsp; RS 2390</p></div>
+                </div>
+                <div class="gallery">
+                    <a href="https://amzn.in/d/8CzdWwa" target="_blank">
+                        <img src="https://m.media-amazon.com/images/I/91cyJhyr6CL._SY522_.jpg" alt="Comic Book" width="170" height="160"/>
+                    </a>
+                <div class="desc"><p class="green-text"> Comic Book Day 2019 <BR> RS 80</p></div>
+                </div>
+                <div class="gallery">
+                    <a href="https://amzn.in/d/fJiuSCr" target="_blank">
+                        <img src="https://m.media-amazon.com/images/I/619GudYxgLL._SX679_.jpg" alt="circket bat" width="160" height="160"/>
+                    </a>
+                    <div class="desc"><p class="green-text"> Hard plastic bat <br> RS 450</p></div>
+                </div>
+                <div class="gallery">
+                    <a href="https://amzn.in/d/g60EOZb" target="_blank">
+                        <img src="https://m.media-amazon.com/images/I/71dhDqkgHPL._SX679_.jpg" alt="mic" width="160" height="170"/>
+                    </a>
+                    <div><p class="green-text"> Mic for YouTube <BR> RS 835</p></div>
+                    </div>
+                <div class="gallery">
+                    <a href="https://amzn.in/d/2NvRn1Z" target="_blank">
+                        <img src="https://m.media-amazon.com/images/I/71uneWbTPpL._SX679_.jpg" alt="Dumbbells" width="160" height="150"/>
+                    </a>
+                    <div><p class="green-text"> Home Gym Dumbbells Kit<br>RS 799</p></div>
+                </div>
+                <div class="gallery">
+                    <a href="https://amzn.in/d/4bS0Fj9" target="_blank">
+                        <img src="https://m.media-amazon.com/images/I/61TyCpcEVCL._SX679_.jpg" alt="camera" width="160" height="170"/>
+                    </a>
+                    <div><p class="green-text"> EOS R10 24.2MP <br> RS 99,999</p></div>
+                </div>
+                <div class="gallery">
+                    <a href="https://amzn.in/d/bZ7qc3s" target="_blank" >
+                        <img src="https://m.media-amazon.com/images/I/51eu5CQlFSL._SX679_.jpg" alt="keyboard" width="160" height="160"/>
+                    </a>
+                    <div><p class="green-text"> MPK MINI MK3 <br> RS 7299</p></div>                   
+                </div>
+                <div class="gallery">
+                    <a href="https://amzn.in/d/5HrTWdc" target="_blank">
+                        <img src="https://m.media-amazon.com/images/I/61-K2lXmHQL._SX679_.jpg" alt="web cam" width="160" height="140"/>
+                    </a>
+                    <div><p class="green-text">Webcam with Microphone<br> RS 2,996</p></div>
+                </div>
+                <div class="gallery">
+                    <a href="https://amzn.in/d/bGl6fjm" target="_blank">
+                    <img src="https://m.media-amazon.com/images/I/61Oie6doAxS._SX679_.jpg" alt="game" width="160" height="160"/>
+                    </a>
+                    <div><p class="green-text"> Wooden Blocks 51 Pcs <br> RS 329</p></div>
+                </div>
+            <div class="gallery">
+                <a href="https://amzn.in/d/dgfCj9P" target="_blank">
+                    <img src="https://m.media-amazon.com/images/I/61ONQj7ZTgL._SX679_.jpg" alt="watch" width="160" height="140"/>
+                </a>
+                <div><p class="green-text"> Enticer analog silver watch<br>RS 5995</p></div>
+            </div>
+            <div class="gallery">
+                <a href="https://amzn.in/d/jf6f152" target="_blank">
+                    <img src="https://m.media-amazon.com/images/I/414Y-XD-S5L.jpg" alt="boxing gloves" width="160" height="160"/>
+                </a>
+                <div><p class="green-text"> Boxing Inspire Gloves <br> RS 3,299</p>    </div>
+            </div>
+            <div class="gallery">
+                <a href="https://amzn.in/d/0HUn6iv" target="_blank">
+                    <img src="https://m.media-amazon.com/images/I/71qZESVTslL._SX679_.jpg" alt="mobile" width="160" height="160"/>
+                </a>
+                <div><p class="green-text">OPPO Reno14 5G <br> RS 37,999</p></div>
+            </div>
+            <div class="gallery">
+                <a href="https://amzn.in/d/0OmJscp" target="_blank">
+                    <img src="https://m.media-amazon.com/images/I/61vwsy-jNWL._SX679_.jpg" alt="water bottle" width="160" height="160"/>
+                </a>
+            <div><p class="green-text"> Water Bottles Set of 4 <br> RS 629</p></div>
+            </div>
+            <div class="gallery">
+                <a href="https://amzn.in/d/87A5EA8" target="_blank">
+                    <img src="https://m.media-amazon.com/images/I/61yZMZC3-VL._SX679_.jpg" alt="wall sticker" width="160" height="160"/>
+                </a>
+                <div><p class="green-text"> Motivational-Wall Sticker<br>RS 239</p></div>
+            </div>
+            <div class="gallery">
+                <a href="https://amzn.in/d/28luYkv" target="_blank">
+                    <img src="https://m.media-amazon.com/images/I/71XEsXS5RlL._SY522_.jpg" alt="book" width="160" height="160"/>
+                </a>
+                <div><p class="green-text">The Psychology of Money <br> RS 288</p></div>
+            </div>
+            <div class="gallery">
+                <a href="https://amzn.in/d/e9mUt83" target="_blank">
+                    <img src="https://m.media-amazon.com/images/I/51-8MtTYekL._SY522_.jpg" alt="book" width="160" height="160"/>
+                </a>
+                <div><p class="green-text">EAT THAT FROG<br> RS 399</p></div>
+            </div>
+            <div class="gallery">
+                <a href="https://amzn.in/d/j4aVR0Z" target="_blank">
+                    <img src="https://m.media-amazon.com/images/I/51GlP2oolAL._SX679_.jpg" alt="hockey stick" width="160" height="160"/>
+                </a>
+                <div><p class="green-text">ALFA Hockey Stick <br> RS 1799</p></div>
+            </div>
+            <div class="gallery">
+                <a href="https://amzn.in/d/iabUCvl" target="_blank">
+                    <img src="https://m.media-amazon.com/images/I/61g21r6D0wL._SY879_.jpg" alt="wrap" width="160" height="160"/>
+                </a>
+                <div><p class="green-text">Boxing wrap <br>RS 159</p></div>
+            </div>
+            <div class="gallery">
+                <a href="https://amzn.in/d/4LYqcNn" target="_blank">
+                    <img src="https://m.media-amazon.com/images/I/61MMJ392qYL._SX679_.jpg" alt="mouth gaurd" width="160" height="160"/>
+                </a>
+                <div><p class="green-text">Bronze Level Mouthguard <br> RS 1,756</p></div>
+            </div>
+            <div class="gallery">
+                <a href="https://amzn.in/d/4XVoY0X" target="_blank">
+                    <img src="https://m.media-amazon.com/images/I/71BOkunat4L._SX679_PIbundle-2,TopRight,0,0_AA679SH20_.jpg" alt="sunscreen" width="160" height="160"/>
+                </a>
+                <div><p class="green-text">Reginald Men Sunscreen<br> RS 1299</p></div>
+            </div>
+
+<script>
+    let dark = false;
+
+    function toggleTheme() {
+        dark = !dark;
+        const root = document.documentElement;
+
+        if (dark) {
+            root.style.setProperty("--bg-color", "#121212");
+            root.style.setProperty("--text-color", "#ffffff");
+            root.style.setProperty("--card-bg", "#1e1e1e");
+            root.style.setProperty("--card-border", "#555");
+            document.querySelector(".theme-toggle").innerText = "☀️ Light Mode";
+        } else {
+            root.style.setProperty("--bg-color", "#ffffff");
+            root.style.setProperty("--text-color", "#000000");
+            root.style.setProperty("--card-bg", "#f9f9f9");
+            root.style.setProperty("--card-border", "#c49e9e");
+            document.querySelector(".theme-toggle").innerText = "🌙 Dark Mode";
+        }
+    }
+</script>
+
+</body>
+</html>
